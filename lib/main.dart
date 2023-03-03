@@ -5,21 +5,18 @@ import 'screen/view/cart_screen.dart';
 import 'screen/view/home_screen.dart';
 import 'screen/view/product_screen.dart';
 
-void main()
-{
+void main() {
   runApp(
     ChangeNotifierProvider(
       create: (context) => ProductProvider(),
       child: MaterialApp(
         debugShowCheckedModeBanner: false,
         routes: {
-          '/' : (context) => Homescreen(),
-          'product' : (context) => Productscreen(),
-          'cart' : (context) => Cartscreen(),
+          '/': (context) => Homescreen(),
+          'product': (context) => Productscreen(),
+          'cart': (context) => Cartscreen(),
         },
       ),
     ),
   );
 }
-
-
